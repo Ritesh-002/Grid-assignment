@@ -1,0 +1,46 @@
+Ans1.
+The CSS Grid Layout Module, simply referred to as CSS Grid, is a powerful layout system that allows web developers to design complex web layouts with ease. It introduces a two-dimensional grid-based layout system, where elements are placed into rows and columns. Unlike traditional layout methods like floats or positioning, CSS Grid provides precise control over the arrangement and alignment of elements within a grid container.
+
+Ans2.
+The main difference between CSS Flexbox (display: flex;) and CSS Grid (display: grid;) lies in their layout models and how they manage the positioning and alignment of elements:
+
+Flexbox (display: flex;)
+1. One-Dimensional Layout:
+Flexbox is designed for laying out elements in a single dimension—either as a row or a column.
+It primarily focuses on distributing space and aligning items along the main axis (horizontal or vertical).
+
+CSS Grid (display: grid;)
+1. Two-Dimensional Layout:
+Grid layout introduces a two-dimensional grid system where elements are organized into rows and columns simultaneously.
+Offers precise control over both row and column alignment and sizing.
+
+Ans3.
+1. Define Rows and Columns Explicitly
+You can explicitly define rows and columns using the following properties:
+
+grid-template-rows: Defines the height of each row in the grid.
+grid-template-columns: Defines the width of each column in the grid.
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px 200px 100px; /* Three rows with heights 100px, 200px, and 100px */
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns with widths in fractions */
+}
+
+Ans4.
+Grid Container Properties:
+1. display:
+
+Specifies the element as a grid container.
+Values: grid, inline-grid.
+.grid-container {
+  display: grid;
+}
+
+2. grid-template-rows and grid-template-columns:
+
+Defines the size and number of rows and columns in the grid.
+Values: Can use various length units (px, fr, %), auto, min-content, max-content, etc.
+.grid-container {
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 1fr 2fr;
+}
